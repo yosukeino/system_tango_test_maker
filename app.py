@@ -232,6 +232,9 @@ def create_test_maker_app():
                 format_func=lambda x: x[0],
                 key="test_type"
             )
+
+            # テストタイプ選択の下に追加
+                create_answer = st.checkbox("答えも合わせて作成する",key="create_answer")
             
             # 問題順序選択
             random_order = st.checkbox(
