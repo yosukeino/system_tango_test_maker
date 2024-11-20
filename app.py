@@ -83,7 +83,7 @@ def create_answer_pdf(df, test_config, test_number=None):
     return html_template
 
 # テスト作成ボタンが押されたときの処理を修正
-if st.button("テスト作成", type="primary"):
+if st.button("テスト作成", key="create_test_button", type="primary"):
     # ... 既存のコード ...
     
     # 問題用HTMLの生成
