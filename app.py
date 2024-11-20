@@ -1,3 +1,13 @@
+import streamlit as st
+import pandas as pd
+from datetime import datetime
+import base64
+import random
+
+# バージョン確認（確認後は削除可能）
+st.write(st.__version__)
+
+
 def create_answer_pdf(df, test_config, test_number=None):
     """
     答え付きバージョンのHTMLを生成する関数
